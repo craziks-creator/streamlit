@@ -16,7 +16,7 @@ bot_token = os.getenv("TOKEN")
 channel = os.getenv("CHANNEL")
 channel2 = os.getenv("CHANNEL2")
 channel3 = os.getenv("CHANNEL3")
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("DATABASE_URL", pool_size=2)
 engine = create_engine(DATABASE_URL)
 db = Session(bind=engine.connect())
 '''
