@@ -5,12 +5,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from telegram_news.template import InfoExtractor, NewsPostman, InfoExtractorJSON, NewsPostmanJSON
 from telegram_news.utils import xml_to_json
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 
-from flask import Flask
-from flask_restful import Resource, Api
+#from flask import Flask
+#from flask_restful import Resource, Api
 
-keep_alive()
+#keep_alive()
 
 bot_token = os.getenv("TOKEN")
 channel = os.getenv("CHANNEL")
