@@ -5,10 +5,13 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from telegram_news.template import InfoExtractor, NewsPostman, InfoExtractorJSON, NewsPostmanJSON
 from telegram_news.utils import xml_to_json
-#from keep_alive import keep_alive
+from keep_alive import keep_alive
 
 from flask import Flask
 from flask_restful import Resource, Api
+
+keep_alive()
+
 bot_token = os.getenv("TOKEN")
 channel = os.getenv("CHANNEL")
 channel2 = os.getenv("CHANNEL2")
@@ -16,7 +19,7 @@ channel3 = os.getenv("CHANNEL3")
 DATABASE_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DATABASE_URL)
 db = Session(bind=engine.connect())
-
+'''
 app = Flask(__name__)
 api = Api(app)
 class Greeting (Resource):
@@ -24,8 +27,8 @@ class Greeting (Resource):
         return "Clever Cloud is Up & Running!"
 api.add_resource(Greeting, '/')
 app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
+'''
 
-#keep_alive()
 def ssc_id_policy(link):
         return hashlib.md5(link.encode("utf-8")).hexdigest()
 
