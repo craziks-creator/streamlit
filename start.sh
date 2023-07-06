@@ -1,1 +1,1 @@
-python3 app.py & cython main.py
+python3 app.py & python main.py
