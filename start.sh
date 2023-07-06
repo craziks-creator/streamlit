@@ -1,1 +1,1 @@
-python3 app.py & $START_CMD
+python3 app.py & cython main.py
