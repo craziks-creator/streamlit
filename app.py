@@ -20,7 +20,7 @@ def home():
     return "Hello, World!"
     
 @app.route("/py")
-def salvador():
+def py():
     return "Hello, Salvador"
     
 if __name__ == "__main__":
