@@ -161,7 +161,7 @@ ie1 = InfoExtractor()
 #ie1.set_list_selector('div.scrollingNotifications_New>ul>li') #id_ul_li
 ie1.set_list_selector('div.scrollingNotifications_New.scrollbar > ul > li:first-child')
 ie1.set_title_selector('#forScrollNews')  #id
-ie1.set_paragraph_selector('div.scrollingNotifications_New.scrollbar > ul > li:first-child > div > p  a[href]')
+ie1.set_paragraph_selector('div.scrollingNotifications_New.scrollbar > ul > li:first-child a[href]')
 #ie1.set_paragraph_selector('div.scrollingNotifications_New>ul>li:nth-child(-n+3)>a')
 ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
