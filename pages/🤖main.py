@@ -152,16 +152,16 @@ np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 #-------------------------channel 6----------------------------------#
-url6= "https://ssc.nic.in/Portal/LatestNews/"
+url6= "https://doc.ssc.nic.in/Portal/LatestNews/"
 tag6 = "ssc"
 table_name6 = "ssc"
 # Info extractor to process data format
 ie1 = InfoExtractor()
 # Select elements by CSS-based selector
 #ie1.set_list_selector('div.scrollingNotifications_New>ul>li') #id_ul_li
-ie1.set_list_selector('div.scrollingNotifications_New > ul > li')
+ie1.set_list_selector('#forScrollNews > ul > li')
 ie1.set_title_selector('#forScrollNews')  #id
-ie1.set_paragraph_selector('div.scrollingNotifications_New > ul > li:nth-child(-n+3) a[href]')
+ie1.set_paragraph_selector('#forScrollNews > ul > li:nth-child(-n+3) a[href]')
 #ie1.set_paragraph_selector('div.scrollingNotifications_New>ul>li:nth-child(-n+3)>a')
 ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
