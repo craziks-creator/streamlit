@@ -12,7 +12,7 @@ st.text('🌯 Kale, Spinach & Rocket Smoothie')
 st.text('🥚 Hard-Boiled Free-Range Egg')
 st.text('🥝🧉 Avacado Toast')
 st.sidebar.success("Select a page ")
-
+'''
 app = Flask(__name__)
 
 @app.route("/")
@@ -25,3 +25,4 @@ def py():
 
 if __name__ == "__main__":
     app.run()
+'''
