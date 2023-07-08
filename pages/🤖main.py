@@ -159,10 +159,10 @@ table_name6 = "ssc"
 ie1 = InfoExtractor()
 # Select elements by CSS-based selector
 #ie1.set_list_selector('div.scrollingNotifications_New>ul>li') #id_ul_li
-ie1.set_list_selector('div.scrollingNotifications_New>ul>li, div.eachNotification>a ')
+ie1.set_list_selector('div.scrollingNotifications_New > ul > li')
 ie1.set_title_selector('#forScrollNews')  #id
-#ie1.set_paragraph_selector('a[href]')
-ie1.set_paragraph_selector('div.scrollingNotifications_New>ul>li:nth-child(-n+3)>a')
+ie1.set_paragraph_selector('div.scrollingNotifications_New > ul > li:nth-child(-n+3) a[href]')
+#ie1.set_paragraph_selector('div.scrollingNotifications_New>ul>li:nth-child(-n+3)>a')
 ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
