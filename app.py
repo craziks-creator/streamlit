@@ -21,7 +21,7 @@ def home():
     #return "Hello, World!"
     return render_template('home.html')
 
-@app.route("/py")
+@app.route("/streamlit")
 def streamlit():
     st.set_page_config(page_title="My Streamlit App")
     st.write("Hello, world!")
