@@ -153,7 +153,7 @@ ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 ie1.set_id_policy(ssc_id_policy)
 # News postman to manage sending affair
-np1 = NewsPostman(listURLs=[url5, ], sendList=[channel3, ], db=db, tag=tag5)
+np1 = NewsPostman(listURLs=[url5, ], sendList=[channel, ], db=db, tag=tag5)
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name5)
