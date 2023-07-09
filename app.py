@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 
 try:
-    requests.get("https://hc-ping.com/rMYcF-5DziyIfqUkNWHd2w/streamlit", timeout=10)
+    requests.get("https://hc-ping.com/rMYcF-5DziyIfqUkNWHd2w/stra", timeout=10)
 except requests.RequestException as e:
     # Log ping failure here...
     print("Ping failed: %s" % e)
