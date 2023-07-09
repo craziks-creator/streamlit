@@ -11,6 +11,14 @@ from telegram_news.utils import xml_to_json
 #from flask_restful import Resource, Api
 
 #keep_alive()
+# Using the requests library:
+import requests
+
+try:
+    requests.get("https://hc-ping.com/rMYcF-5DziyIfqUkNWHd2w/stra", timeout=10)
+except requests.RequestException as e:
+    # Log ping failure here...
+    print("Ping failed: %s" % e)
 
 bot_token = os.getenv("TOKEN")
 channel = os.getenv("CHANNEL")
