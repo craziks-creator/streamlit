@@ -164,8 +164,8 @@ np1.poll()
 
 #-------------------------channel 6----------------------------------#
 url6= "https://doc.ssc.nic.in/Portal/LatestNews/"
-tag6 = "ssc"
-table_name6 = "ssc"
+tag6 = "ssc1"
+table_name6 = "ssc1"
 # Info extractor to process data format
 ie1 = InfoExtractor()
 # Select elements by CSS-based selector
