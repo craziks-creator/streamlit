@@ -140,6 +140,7 @@ np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 #-------------------------channel 5----------------------------------#
 url5= "https://sssc.uk.gov.in/"
+url7= "https://sssc.uk.gov.in/pages/display/140-answer-key-for-all-exam-and-online-objection"
 tag5 = "Uksssc"
 table_name5 = "uksssc"
 # Info extractor to process data format
@@ -153,7 +154,7 @@ ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 ie1.set_id_policy(ssc_id_policy)
 # News postman to manage sending affair
-np1 = NewsPostman(listURLs=[url5, ], sendList=[channel, ], db=db, tag=tag5)
+np1 = NewsPostman(listURLs=[url5,url7, ], sendList=[channel, ], db=db, tag=tag5)
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name5)
@@ -171,13 +172,12 @@ ie1 = InfoExtractor()
 ie1.set_list_selector('div.scrollingNotifications_New.scrollbar > ul > li:nth-child(-n+3)')
 ie1.set_title_selector('#forScrollNews')  #id
 ie1.set_paragraph_selector('div.scrollingNotifications_New.scrollbar > ul > li:nth-child(-n+3) a[href]')
-#ie1.set_paragraph_selector('div.scrollingNotifications_New>ul>li:nth-child(-n+3)>a')
 ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 ie1.set_id_policy(ssc_id_policy)
 # News postman to manage sending affair
-np1 = NewsPostman(listURLs=[url6, ], sendList=[channel,channel2,channel3, ], db=db, tag=tag6)
+np1 = NewsPostman(listURLs=[url6, ], sendList=[channel, ], db=db, tag=tag6)
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name6)
