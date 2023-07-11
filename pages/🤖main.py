@@ -90,7 +90,7 @@ np1.poll()
 
 #-------------------------channel 4----------------------------------#
 
-tag4 = "FROM OTHERS RESUL"
+tag4 = "FROM OTHERS RESULT"
 table_name4 = "others"
 # Info extractor to process data format
 ie1 = InfoExtractor()
