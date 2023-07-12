@@ -1,20 +1,11 @@
-# importing webdriver from selenium
-from selenium import webdriver
 import time
-# Here Chrome will be used
-driver = webdriver.Chrome()
+from selenium import webdriver
 
-
-# URL of website
 url = "https://sscnrs.streamlit.app/~/+/"
-while True: 
-  try: 
-    # Opening the website
-    driver.get(url)
-    
-    # Getting current URL source code
+driver = webdriver.Chrome()
+driver.get(url)
+
+while True:
     get_title = driver.title
-    
-    # Printing the title of this URL
     print(get_title)
-    time.sleep(30)
+    time.sleep(30)  # Pause for 30 seconds before repeating the loop
