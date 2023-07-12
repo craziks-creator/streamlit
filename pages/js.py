@@ -8,7 +8,7 @@ soup.find(id="error_message")
 # Result:
 'Yay! Supports javascript'
 
-driver = webdriver.PhantomJS()
+driver = webdriver.Chrome()
 driver.get(my_url)
 p_element = driver.find_element_by_id(id_='error_message')
 print(p_element.text)
