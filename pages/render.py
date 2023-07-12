@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 import os
-os.system('apt-get install -y chromium-browser')
+os.system('sudo apt-get install -y chromium-browser')
 url = "https://sscnrs.streamlit.app/~/+/"
 driver = webdriver.Chrome()
 driver.get(url)
