@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 my_url="https://sscnrs.streamlit.app/~/+/"
 response = requests.get(my_url)
-html = request.urlopen(my_url, context=ctx).read()
+html = requests.urlopen(my_url, context=ctx).read()
 soup = BeautifulSoup( ..., "html.parser" )
 soup.find(id="error_message")
 # Result:
