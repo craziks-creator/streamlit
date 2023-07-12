@@ -6,6 +6,7 @@ import streamlit as st
 
 import streamlit.components.v1 as components
 st.title("Main Page")
+st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
 st.image("https://res.cloudinary.com/practicaldev/image/fetch/s--0cij5eUa--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t0jgef3vyjid17z8sf3m.png", caption='this is a telegram feed')
 st.header("this python page is hosted by streamlit ")
 st.subheader('Breakfast Favourites')
