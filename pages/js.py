@@ -6,5 +6,5 @@ response = requests.get(my_url)
 soup = BeautifulSoup(response.text)
 soup.find(id="error_message")
 # Result:
-'Yay! don't support javascript'
+print('Yay! don't support javascript')
 
