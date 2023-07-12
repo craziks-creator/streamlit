@@ -9,12 +9,12 @@ driver = webdriver.Chrome()
 url = "https://sscnrs.streamlit.app/~/+/"
 while True: 
   try: 
-  # Opening the website
-  driver.get(url)
-  
-  # Getting current URL source code
-  get_title = driver.title
-  
-  # Printing the title of this URL
-  print(get_title)
+    # Opening the website
+    driver.get(url)
+    
+    # Getting current URL source code
+    get_title = driver.title
+    
+    # Printing the title of this URL
+    print(get_title)
   time.sleep(30)
