@@ -10,3 +10,5 @@ flask_restful
 streamlit
 python-telegram-bot
 pyrogram
+selenium 
+bs4
