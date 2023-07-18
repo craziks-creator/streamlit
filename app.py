@@ -6,7 +6,7 @@ import streamlit as st
 
 import streamlit.components.v1 as components
 st.title("Main Page")
-st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
+st.title(':sunglasses:')
 st.image("https://res.cloudinary.com/practicaldev/image/fetch/s--0cij5eUa--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t0jgef3vyjid17z8sf3m.png", caption='this is a telegram feed')
 st.header("this python page is hosted by streamlit ")
 st.subheader('Breakfast Favourites')
@@ -24,7 +24,7 @@ components.html(
       <div class="card">
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             Collapsible Group Item #1
             </button>
           </h5>
@@ -51,7 +51,7 @@ components.html(
       </div>
     </div>
     """,
-    height=600,
+    height=100,
 )
 app = Flask(__name__)
 
